@@ -1,0 +1,26 @@
+{
+  "name": "@memory/mcp-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "smoke": "tsx --env-file-if-exists=../../.env scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@memory/embeddings": "workspace:*",
+    "@memory/ingest": "workspace:*",
+    "@memory/retrieval": "workspace:*",
+    "@memory/schema": "workspace:*",
+    "@memory/store": "workspace:*",
+    "@modelcontextprotocol/server": "^2.3.1",
+    "jose": "^6.0.0",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0"
+  }
+}

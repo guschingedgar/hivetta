@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.vercel/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.DS_Store
+supabase/.temp/
+supabase/.branches/
+next-env.d.ts

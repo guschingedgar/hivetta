@@ -1,0 +1,13 @@
+{
+  "name": "@memory/retrieval",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc -p tsconfig.json" },
+  "dependencies": {
+    "@memory/embeddings": "workspace:*",
+    "@memory/schema": "workspace:*",
+    "@memory/store": "workspace:*"
+  }
+}

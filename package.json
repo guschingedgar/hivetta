@@ -1,0 +1,22 @@
+{
+  "name": "llm-memory",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.24.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "corepack pnpm -r --parallel typecheck",
+    "db:local:start": "node scripts/start-local-db.mjs",
+    "db:local:env": "node scripts/setup-local-env.mjs",
+    "db:push": "supabase db push",
+    "db:types": "supabase gen types typescript --linked --schema public > packages/store/src/database.types.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "supabase": "^2.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
